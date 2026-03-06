@@ -77,7 +77,7 @@ public class FCadastro extends JFrame {
 	private JLabel lblNewLabel_11;
 
 	/**
-	 * Launch the application.
+	 * Iniciar o app
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -93,7 +93,7 @@ public class FCadastro extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Criar e abri a página do app.
 	 */
 	public FCadastro() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(FCadastro.class.getResource("/img/Logo.png")));
@@ -229,7 +229,7 @@ public class FCadastro extends JFrame {
 		txtNome.setBounds(75, 55, 96, 19);
 		contentPane.add(txtNome);
 		txtNome.setColumns(10);
-		// Uso do PlainDocument para limitar os campos
+	
 		txtNome.setDocument(new Validador(50));
 
 		lblNewLabel_3 = new JLabel("RG *");
@@ -250,7 +250,7 @@ public class FCadastro extends JFrame {
 		txtRG.setBounds(75, 105, 96, 19);
 		contentPane.add(txtRG);
 		txtRG.setColumns(10);
-		// Uso do PlainDocument para limitar os campos
+		
 		txtRG.setDocument(new Validador(9));
 
 		lblNewLabel_4 = new JLabel("Sexo *");
@@ -262,7 +262,7 @@ public class FCadastro extends JFrame {
 		txtEmail.setBounds(75, 155, 96, 19);
 		contentPane.add(txtEmail);
 		txtEmail.setColumns(10);
-		// Uso do PlainDocument para limitar os campos
+		
 		txtEmail.setDocument(new Validador(50));
 
 		lblNewLabel_5 = new JLabel("Email *");
@@ -284,7 +284,7 @@ public class FCadastro extends JFrame {
 		txtTelefone.setBounds(110, 180, 96, 19);
 		contentPane.add(txtTelefone);
 		txtTelefone.setColumns(10);
-		// Uso do PlainDocument para limitar os campos
+		
 		txtTelefone.setDocument(new Validador(15));
 
 		lblNewLabel_6 = new JLabel("Telefone *");
@@ -312,7 +312,7 @@ public class FCadastro extends JFrame {
 		});
 		txtConfirmSenha.setBounds(115, 248, 96, 19);
 		contentPane.add(txtConfirmSenha);
-		// Uso do PlainDocument para limitar os campos
+		
 		txtConfirmSenha.setDocument(new Validador(30));
 
 		txtSenha = new JPasswordField();
@@ -336,7 +336,7 @@ public class FCadastro extends JFrame {
 		});
 		txtSenha.setBounds(115, 221, 96, 19);
 		contentPane.add(txtSenha);
-		// Uso do PlainDocument para limitar os campos
+		
 		txtSenha.setDocument(new Validador(30));
 
 		txtDDD = new JTextField();
@@ -352,7 +352,7 @@ public class FCadastro extends JFrame {
 		txtDDD.setBounds(75, 180, 25, 19);
 		contentPane.add(txtDDD);
 		txtDDD.setColumns(10);
-		// Uso do PlainDocument para limitar os campos
+		
 		txtDDD.setDocument(new Validador(3));
 
 		comboSexo = new JComboBox();
@@ -618,6 +618,7 @@ public class FCadastro extends JFrame {
 	        return false;
 	    }
 	}
+
 
 
 
